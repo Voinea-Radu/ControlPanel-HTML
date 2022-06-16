@@ -89,7 +89,7 @@
                                 <td class="table-row-permissions">
                                     <div class="checkbox-container yellow">
                                         <input
-                                               th:checked="${user.hasPermission('GLOBAL_ADMIN')}"
+                                               th:checked="${user.hasPermission(permission)}"
                                                th:disabled="${disablePermissions}"
                                                class="permission-input-update"
                                                th:id="${permission.getName()}"
